@@ -17,6 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Портфолио</title>
   </head>
 
@@ -25,7 +26,7 @@
       <div class="container page-header__container">
         <nav class="navigation">
           <a class="logo navigation__logo" href="" lang="en"
-            >Web<span class="logo--header-color">Studio</span></a
+            >Web<span class="logo--dark-color">Studio</span></a
           >
           <ul class="site-navigation">
             <li class="site-navigation__item">
@@ -43,17 +44,17 @@
             </li>
           </ul>
         </nav>
-        <ul class="header-contacts">
-          <li class="header-contacts__item">
-            <a class="header-contacts__link" href="mailto:info@devstudio.com">
-              <svg class="header-contacts__envelope-logo" width="16" height="12">
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon contacts__icon--left-position" width="16" height="12">
                 <use href="./images/icons.svg#envelope-1"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="header-contacts__item">
-            <a class="header-contacts__link" href="tel:+380961111111">
-              <svg class="header-contacts__smartphone-logo" width="10" height="16">
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contacts__icon contacts__icon--left-position" width="10" height="16">
                 <use href="./images/icons.svg#smartphone-2"></use></svg
               >+38 096 111 11 11</a
             >
@@ -283,9 +284,9 @@
 
     <footer class="page-footer">
       <div class="container page-footer__container">
-        <div class="contacts-box">
+        <div class="contacts-box contacts-box--left-position">
           <a class="logo contacts-box__logo" href="" lang="en"
-            >Web<span class="logo--footer-color">Studio</span></a
+            >Web<span class="logo--light-color">Studio</span></a
           >
           <address class="address">
             <p class="address__post">г. Киев, пр-т Леси Украинки, 26</p>
@@ -293,28 +294,28 @@
             <a class="address__link" href="tel:+380991111111">+38 099 111 11 11</a>
           </address>
         </div>
-        <div class="join-section">
-          <p class="join-section__slogan">присоединяйтесь</p>
+        <div class="join-section container__join-section">
+          <p class="join-section__slogan join-section__slogan--top-position">присоединяйтесь</p>
           <ul class="join-section__networks">
-            <li class="join-section__network">
+            <li class="join-section__network join-section__network--right-indent">
               <a class="join-section__link" href=""
                 ><svg class="join-section__logo" width="20" height="20">
                   <use href="./images/icons.svg#instagram-1"></use></svg
               ></a>
             </li>
-            <li class="join-section__network">
+            <li class="join-section__network join-section__network--right-indent">
               <a class="join-section__link" href="">
                 <svg class="join-section__logo" width="20" height="20">
                   <use href="./images/icons.svg#twitter-2"></use></svg
               ></a>
             </li>
-            <li class="join-section__network">
+            <li class="join-section__network join-section__network--right-indent">
               <a class="join-section__link" href=""
                 ><svg class="join-section__logo" width="20" height="20">
                   <use href="./images/icons.svg#facebook-3"></use></svg
               ></a>
             </li>
-            <li class="join-section__network">
+            <li class="join-section__network join-section__network--right-indent">
               <a class="join-section__link" href=""
                 ><svg class="join-section__logo" width="20" height="20">
                   <use href="./images/icons.svg#linkedin-4"></use></svg
@@ -323,7 +324,9 @@
           </ul>
         </div>
         <form class="subscribe-field">
-          <p class="subscribe-field__slogan">Подпишитесь на рассылку</p>
+          <p class="subscribe-field__slogan subscribe-field__slogan--top-position">
+            Подпишитесь на рассылку
+          </p>
           <div class="field-group">
             <label
               ><input
