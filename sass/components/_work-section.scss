@@ -4,14 +4,14 @@
 
 .field-work {
   display: flex;
-}
 
-.field-work__item--right-indent:not(:last-child) {
-  margin-right: 30px;
-}
+  &__item--right-indent:not(:last-child) {
+    margin-right: 30px;
+  }
 
-.field-work__item {
-  position: relative;
+  .field-work__item {
+    position: relative;
+  }
 }
 
 .field-work__img {

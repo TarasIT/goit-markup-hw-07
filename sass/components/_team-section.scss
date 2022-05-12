@@ -9,10 +9,12 @@
 
 .team {
   display: flex;
-}
 
-.team-item--right-indent:not(:last-child) {
-  margin-right: 30px;
+  .team-item--right-indent {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .teammate__description {
@@ -24,7 +26,7 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-item__photo {
+.teammate__photo {
   display: block;
 }
 
@@ -55,39 +57,21 @@
 .teammate__networks {
   display: flex;
   justify-content: center;
+
+  .teammate__network--right-indent {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
 }
 
-.teammate__network--right-indent:not(:last-child) {
-  margin-right: 10px;
-}
+.social-network {
+  &:hover > .social-network__logo,
+  &:focus > .social-network__logo {
+    fill: var(--white-text-background-color);
+  }
 
-.teammate__link,
-.join-section__link {
-  display: block;
-  width: 44px;
-  height: 44px;
-  padding: 12px;
-  border-radius: 50%;
-
-  transition-property: background-color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-}
-
-.teammate__link:hover,
-.teammate__link:focus {
-  background-color: var(--blue-text-background-color);
-}
-
-.teammate__logo {
-  transition-property: fill;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-
-  fill: var(--border-client-icon-color);
-}
-
-.teammate__link:hover > .teammate__logo,
-.teammate__link:focus > .teammate__logo {
-  fill: var(--white-text-background-color);
+  .social-network__logo--fill-color {
+    fill: var(--border-client-icon-color);
+  }
 }

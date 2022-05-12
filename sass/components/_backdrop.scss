@@ -8,8 +8,10 @@
   transition: opacity 250ms, visibility 250ms;
 }
 
-.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(2.5) rotate(20deg);
+.is-hidden {
+  .modal {
+    transform: translate(-50%, -50%) scale(2.5) rotate(20deg);
+  }
 }
 
 .modal {
@@ -43,21 +45,21 @@
   cursor: pointer;
 
   background-color: var(--white-text-background-color);
+
+  &:hover > .button-close__icon,
+  &:focus > .button-close__icon {
+    fill: var(--blue-text-background-color);
+  }
 }
 
 .button-close__icon {
   transition: fill var(--transition-duration) var(--transition-timing-function);
   fill: #000000;
-}
 
-.button-close__icon:hover,
-.button-close__icon:focus {
-  fill: var(--blue-text-background-color);
-}
-
-.button-close:hover > .button-close__icon,
-.button-close:focus > .button-close__icon {
-  fill: var(--blue-text-background-color);
+  &:hover,
+  &:focus {
+    fill: var(--blue-text-background-color);
+  }
 }
 
 .is-hidden {

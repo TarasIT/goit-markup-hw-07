@@ -1,9 +1,9 @@
 .features {
   display: flex;
-}
 
-.features__item--right-indent:not(:last-child) {
-  margin-right: 30px;
+  &__item--right-indent:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .features__canvas {
